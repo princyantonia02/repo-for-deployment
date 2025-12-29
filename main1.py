@@ -14,7 +14,7 @@ from services.skills_list import SKILL_LIST
 
 # ---------------- Load env ----------------
 
-HF_API_KEY = st.secrets("HUGGINGFACE_API_KEY")
+HF_API_KEY = st.secrets["HUGGINGFACE_API_KEY"]
 
 API_URL = "https://router.huggingface.co/v1/chat/completions"
 HEADERS = {
@@ -186,3 +186,4 @@ Resume content:
                     unsafe_allow_html=True)
     else:
         st.info("AI feedback unavailable. Showing analytical insights only.")
+
